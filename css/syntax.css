@@ -1,0 +1,84 @@
+/* Pre-formatted styling for code posts */
+
+blockquote p {
+	line-height: 1.2em;
+}
+
+pre, code {
+	font-family: Consolas, Courier, monospace;
+}
+
+section > pre {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	background-color: #dcdcdc;
+}
+
+section > pre {
+	margin-bottom: 1em;
+}
+
+pre, .highlight {
+	padding: .25em;
+	white-space: pre-wrap;
+}
+
+blockquote, .highlight {
+	margin-bottom: 1em;
+}
+
+.highlight code {
+  background-color: #272822;
+  border: none;
+}
+
+.highlight {
+  background: #272822;
+  border-radius: 5px;
+  color: #f8f8f2;
+}
+
+.highlight .hll {
+  background-color: #49483e;
+}
+
+.highlight .err {
+  background-color: #1e0010;
+  color: #960050;
+}
+
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gs {
+  font-weight: 700;
+}
+
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
+  color: #75715e;
+}
+
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .no {
+  color: #66d9ef;
+}
+
+.highlight .l, .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .se {
+  color: #ae81ff;
+}
+
+.highlight .n, .highlight .p, .highlight .nb, .highlight .ni, .highlight .nl, .highlight .nn, .highlight .py, .highlight .nv, .highlight .w, .highlight .bp, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #f8f8f2;
+}
+
+.highlight .o, .highlight .kn, .highlight .nt, .highlight .ow {
+  color: #f92672;
+}
+
+.highlight .ld, .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+  color: #e6db74;
+}
+
+.highlight .na, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nf, .highlight .nx {
+  color: #a6e22e;
+}

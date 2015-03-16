@@ -1,0 +1,22 @@
+# Permalinks
+permalink:              pretty
+relative_permalinks:    true
+
+# Formats
+markdown:               kramdown
+highlighting:           pygments
+
+# Setup
+title:                  "scott/dev"
+tagline:                The dev blog of Scott Lambert
+url:                    "http://sdlambert.github.io"
+localurl:               "http://dev.sdlambert.github.io"
+destination:            "~/public_html/sdlambert.github.io"
+copyright:              2015
+excerpt_separator:      <!--more-->
+
+# Author
+author:
+  name:                 Scott Lambert
+  url:                  http://github.com/sdlambert
+  email:                sdlamber@gmail.com

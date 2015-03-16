@@ -1,0 +1,17 @@
+{% include  home_header.html %}
+{% include  nav.html %}
+{% include  aside.html %}
+	<section class="main">
+		<h2>Recent blog posts:</h2>
+		<section>
+		{% for post in site.posts limit: 3 %}
+			<article>
+				<h2><a href="{{ post.url }}" class="triangle">{{ post.title }}</a></h2>
+				<h3>{{ post.date | date: "%B %-d, %Y" }}</h3>
+				{{ post.excerpt }}
+			</article>
+		{% endfor %}
+		</section>
+	</section>
+	<div class="clearfix"></div>
+{% include  footer.html %}

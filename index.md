@@ -1,0 +1,10 @@
+---
+title: "web development blog and portfolio"
+layout: home
+image_path: "/img/scott-dev-logo.png"
+description: "The web development blog and portfolio of Scott Lambert"
+---
+
+
+
+

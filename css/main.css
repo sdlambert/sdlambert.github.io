@@ -1,0 +1,422 @@
+/* General CSS */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	word-spacing: .05em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: .5em 0;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	position: relative;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+a:link {
+	color: #003333;
+}
+
+a:visited {
+
+	color: #999999;
+}
+
+a:hover {
+	color: #669999;
+}
+
+a:active {
+	color: #003333;
+}
+
+nav {
+	display: block;
+	height: 4em;
+}
+
+nav ul {
+	display: block;
+	float: right;
+	padding-right: 2em;
+}
+
+nav li {
+	padding: 1em 0;
+	display: inline-block;
+	width: 5em;
+	text-align: center;
+}
+
+nav li a {
+	display: inherit;
+	color: #dcdcdc;
+	text-align: right;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+a.base {
+	font-weight: bold;
+	color: #003333;
+}
+
+/* Clearfix for floats */
+
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+/* Main blog sections */
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.border_top {
+	display: block;
+	width: 100%;
+	background-color: #000000;
+	min-height: 10px;
+}
+
+hr {
+	display: block;
+	margin: 20px auto;
+	border: 0;
+	width: 90%;
+	height: 1px;
+	background-color: #999999;
+}
+
+/* Aside */
+
+aside {
+	float: left;
+	width: 25%;
+	padding: 0 1em;
+	height: auto;
+}
+
+aside section {
+	width: 100%;
+	margin: 0;
+}
+
+aside img {
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.blurb {
+	margin-top: 1em;
+}
+
+aside hr {
+	visibility: hidden;
+}
+
+/* Main article & content */
+
+.main {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	float: left;
+	width: 75%;
+	border-left: 1px solid #999999;
+	padding: 0 2em;
+}
+
+.main li {
+	margin: 0 1em;
+
+}
+
+article {
+	display: inline-block;
+	padding: 0 1.5em;
+}
+
+article > p {
+	padding: 0.5em 0;
+}
+
+/* Post content specific */
+
+.post_content li, .post_content ul, .post_content ol {
+	padding-bottom: .25em;
+}
+
+.post_content ul li {
+	list-style: disc;
+}
+
+.post_content ol li {
+	list-style: decimal;
+}
+
+.post_content > p {
+	margin-bottom: 1em;
+}
+
+.post_content p > code {
+	padding-top: .2em;
+}
+
+.tags {
+	margin: 1em 0;
+}
+
+.tag {
+	display: inline-block;
+}
+
+.tag a {
+	background-color: #003333;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 0.1em 1em;
+	margin: .1em;
+}
+
+.tag a:link {
+	color: #669999;
+	text-decoration: none;
+}
+
+.tag a:visited {
+	color: #999999;
+}
+
+.tag a:hover {
+	color: #ffffff;
+}
+
+.tagged_post {
+	padding: 6px 0;
+}
+
+.about {
+	margin-top: 1em;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	overflow: auto;
+	padding: .5em;
+}
+
+.about p {
+	font-style: italic;
+	text-align: justify;
+}
+
+.about img {
+	width: auto;
+	float: left;
+	padding-right: 1em;
+}
+
+/* Header triangle highlight */
+
+.triangle {
+	position: relative;
+}
+
+.triangle::before {
+	position: absolute;
+	left: -20px;
+	top: 8px;
+	vertical-align: middle;
+	width: 12px;
+	height: 16px;
+	background: url("/img/triangle-icon.png");
+	content: "";
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	padding: 2%;
+}
+
+.footer_list a {
+	text-decoration: none;
+}
+
+.footer_list a:link {
+	color: #999999;
+}
+
+.footer_list a:visited {
+
+	color: #999999;
+}
+
+.footer_list a:hover {
+	color: #669999;
+	text-decoration: underline;
+}
+
+.footer_list a:active {
+	color: #999999;
+}
+
+.footer_list {
+	list-style: none;
+}
+
+.footer_list li {
+	display: inline-block;
+	padding: 1em 1em;
+}
+
+.icons, .footer_nav, .copyright {
+	display: inline-block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.shouts {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.social {
+	display: inline-block;
+	margin: auto;
+	width: 25%;
+	padding: 10px;
+	float: left;
+}
+
+.social svg:hover{
+	position: relative;
+	bottom: 4px;
+}
+
+@media screen and (max-width:768px){
+	aside {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		padding: 0 2em 2em 2em;
+	}
+
+	.logo, .blurb {
+		display: block;
+		float: left;
+		margin: 0;
+	}
+
+	aside hr {
+		visibility: visible;
+	}
+
+	.title {
+		width: 100%;
+		padding: .5em;
+		text-align: center;
+	}
+
+	.logo {
+		width: 30%;
+		margin: 0;
+	}
+
+	.blurb {
+		width: 70%;
+		margin: 0;
+		padding-left: 1em;
+	}
+
+	.main {
+		width: 100%;
+		border: none;
+	}
+
+	.footer_nav {
+		width: 80%;
+	}
+
+	.footer_list li {
+		margin: 0 auto;
+		padding: .5em .5em 0 .5em;
+	}
+}
+
+
+@media screen and (max-width:480px){
+	nav {
+		width: 100%;
+		height: 3em;
+	}
+
+	nav ul {
+		padding: 0;
+		float: none;
+		width: 100%;
+	}
+
+	nav li {
+		float: left;
+		margin: 0 auto;
+		width: 25%;
+	}
+
+	nav li a {
+		text-align: center;
+	}
+
+	aside, .main {
+		padding: 0 .5em;
+		height: 100%;
+	}
+
+	aside section {
+		margin: .25em 0;
+	}
+
+	.blog-title {
+		text-align: center;
+	}
+
+	.logo, .blurb {
+		width: 50%;
+	}
+
+	.icons, .footer_nav, .copyright {
+		width: 80%;
+	}
+}

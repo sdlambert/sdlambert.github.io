@@ -1,0 +1,27 @@
+{% include  header.html %}
+{% include  nav.html %}
+{% include  aside.html %}
+	<section class="main">
+		<article>
+			<section>
+				<h2><span class="triangle">{{  page.title  }}</span></h2>
+			</section>
+			<section class="post_content">
+				{{  content | indent_tab: 4 }}
+			</section>
+			<section class="tags">
+				<ul>Tagged as:
+				{% for tag in page.tags %}
+					<li class="tag"><a href="/tags/{{ tag | remove:','}}/index.html">{{ tag | remove:','}}</a></li>
+				{% endfor %}
+				</ul>
+			</section>
+			<section class="about">
+				<h3>About the author</h3>
+				<img src="/img/profile-100.png" height="100" width="100" alt="A picture of the author, Scott Lambert" title="Scott Lambert, future web dev">
+				<p>Scott Lambert is a student at Macomb Community College and an aspiring web developer. He is a proud father and unapologetic geek, and enjoys spending time with his family, tinkering with technology and learning new things.</p>
+			</section>
+		</article>
+	</section>
+	<div class="clearfix"></div>
+{% include  footer.html %}
