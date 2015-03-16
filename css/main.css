@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: .5em 0;
+	margin-bottom: .5em;
 }
 
 h1 {
@@ -242,6 +242,10 @@ article > p {
 	width: auto;
 	float: left;
 	padding-right: 1em;
+}
+
+.blog-page ul {
+	margin-bottom: 1em;
 }
 
 /* Header triangle highlight */
