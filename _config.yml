@@ -14,8 +14,11 @@ localurl:               "http://dev.sdlambert.github.io"
 destination:            "~/public_html/sdlambert.github.io"
 copyright:              2015
 excerpt_separator:      <!--more-->
+gems:
+  - jekyll-sitemap
 
 # Author
 author:
   name:                 Scott Lambert
   url:                  http://github.com/sdlambert
+
