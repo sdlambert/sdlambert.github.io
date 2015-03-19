@@ -8,7 +8,7 @@ description: "An introduction to Jekyll, the blogging platform that allows you t
 ---
 ![The Jekyll Logo](/img/jekyll-logo-2x.png "Jekyll, a static blogging platform")
 
-A few months ago, I sat down to create this blog so I could document all the things I was learning about web development and slowly build my portfolio. I also wanted to learn git and give myself a forum in which I could build things and experiment. I took a look at several options, but eventually settled on [Jekyll][1], a static blogging platform that integrates with your [GitHub Pages][2] site. I chose Jekyll because it offered a great way for me to combine the technologies I wanted to practice and learn: HTML, CSS, Javscript, git, and the Linux command line. Jekyll hit all the right notes for me, and it might just do the same for you.
+A few months ago, I sat down to create this blog so I could document all the things I'll be learning about web development and I work to build up my portfolio. I also wanted to learn git and give myself a place to build things and experiment. I took a look at several options, but eventually settled on [Jekyll][1], a static blogging platform that integrates with  [GitHub Pages][2]. I chose Jekyll because it offered a great way for me to combine the technologies I wanted to practice and learn: HTML, CSS, Javscript, git, and the Linux command line. Jekyll hit all the right notes for me, and it might just do the same for you.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ One of the remarkable things I like about Jekyll is the ability to configure my 
 
 ###How to Get Started
 
-In order to get Jekyll up and running, you'll need to [install Ruby][5] if you haven't already. From the command prompt simply enter the following commands:
+In order to get Jekyll up and running, you'll need Linux, Unix or Mac OS X installed on your computer. (You can [install Jekyll on Windows][11], it just takes a bit more effort.) You will need to [install Ruby][5] and [Node][12] if you haven't already. From the command prompt simply enter the following commands:
 
 ~~~
 $ gem install jekyll
@@ -71,7 +71,9 @@ Each layout can utilize as many snippets of HTML as needed
 The `_plugins` folder allows you to further customize your blog by running custom ruby scripts on your pages. Since I am not (yet) fluent in Ruby, I have only tinkered with a few plugins so far, but depending on your needs you might need a third party solution for your blog, or you can certainly write your own. All of your ruby scripts residing in this directory will be run when you build your site.
 
 Lastly, the `_site` directory is where your rendered site will be posted by default. (You can edit the location of your rendered site in your `_config.yml`.)
-You can either point your browser to this directory, or point Jekyll to your local hosting directory that you may have running. Once you have the rendered files, you can simply commit them to your repository and upload them to your GitHub Pages.
+You can either point your browser to this directory, or point Jekyll to your local hosting directory that you may already have up and running. My personal setup is hosting locally through Apache, so I have Jekyll dump my files into a local directory for development.
+
+The nice thing about GitHub is that it provides native support for rendering your Jekyll files to its GitHub Pages. Once I commit the changes to the  remote stored on GitHub, it automatically renders the files for display on Github Pages. This way, I can render and view local changes as I develop, and let GitHub worry about rendering the master copy for public view.
 
 ###Customization
 
@@ -103,3 +105,5 @@ Additional resources:
 [8]: http://jekyllthemes.org/ "Jekyll Themes"
 [9]: https://help.github.com/articles/using-jekyll-with-pages/ "Using Jekyll with Pages"
 [10]: http://jekyllrb.com/docs/home/ "Jekyll Docs"
+[11]: http://jekyll-windows.juthilo.com/ "How to Install Jekyll on Windows"
+[12]: https://nodejs.org/download/ "Download and Install Node.js"
