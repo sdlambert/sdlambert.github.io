@@ -79,10 +79,6 @@ nav li a {
 	text-decoration: none;
 }
 
-img {
-	width: 100%;
-	height: 100%;
-}
 
 a.base {
 	font-weight: bold;
@@ -142,6 +138,10 @@ aside img {
 	margin-top: 1em;
 }
 
+.blurb p {
+	margin-bottom: 1em;
+}
+
 aside hr {
 	visibility: hidden;
 }
@@ -154,11 +154,6 @@ aside hr {
 	width: 75%;
 	border-left: 1px solid #999999;
 	padding: 0 2em;
-}
-
-.main li {
-	margin: 0 1em;
-
 }
 
 article {
@@ -223,25 +218,6 @@ article > p {
 
 .tagged_post {
 	padding: 6px 0;
-}
-
-.about {
-	margin-top: 1em;
-	border: 1px solid #999999;
-	border-radius: 3px;
-	overflow: auto;
-	padding: .5em;
-}
-
-.about p {
-	font-style: italic;
-	text-align: justify;
-}
-
-.about img {
-	width: auto;
-	float: left;
-	padding-right: 1em;
 }
 
 .blog-page ul {

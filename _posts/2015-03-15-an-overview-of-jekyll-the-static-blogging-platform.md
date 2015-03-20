@@ -1,6 +1,6 @@
 ---
 title: An Introduction to Jekyll, the Static Blog Generator
-layout: code_post
+layout: post
 tags:
  - jekyll
 image_path: "/img/jekyll-logo-2x.png"
@@ -46,7 +46,7 @@ $ jekyll build -w
 
 With this option turned on, I'm able to work on my blog and all its pages locally. If I need to tweak some CSS or update a layout, I just save my changes and Jekyll will re-generate the relevant pages. I simply have to refresh my browser.
 
-Jekyll can also be used remotely with GitHub, where changes you make to your repository can be rendered by GitHub and placed accordingly into your GitHub pages.
+Jekyll can also be used remotely with GitHub, where changes you make to your repository can be rendered by GitHub and placed accordingly into your GitHub pages. More on that in a bit.
 
 ###Files and Directory Structure
 
