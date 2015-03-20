@@ -177,28 +177,36 @@ article > p {
 
 /* Post content specific */
 
-.post_content li, .post_content ul, .post_content ol {
+.post-content li, .post-content ul, .post-content ol {
 	padding-bottom: .25em;
 }
 
-.post_content ul li {
+.post-content ul {
+	margin-left: 1em;
+}
+
+.post-content ul li {
 	list-style: disc;
 }
 
-.post_content ol li {
+.post-content ol li {
 	list-style: decimal;
 }
 
-.post_content > p {
+.post-content > p {
 	margin-bottom: 1em;
 }
 
-.post_content p > code {
+.post-content p > code {
 	padding-top: .2em;
 }
 
 .tags {
 	margin: 1em 0;
+}
+
+.tags ul {
+	margin: 2em 0;
 }
 
 .tag {
@@ -233,6 +241,26 @@ article > p {
 .blog-page ul {
 	margin-bottom: 1em;
 }
+
+.about {
+	margin-top: 1em;
+	border: 1px solid #999999;
+	border-radius: 3px;
+	overflow: auto;
+	padding: .5em;
+}
+
+.about p {
+	font-style: italic;
+	text-align: justify;
+}
+
+.about img {
+	width: auto;
+	float: left;
+	padding-right: 1em;
+}
+
 
 /* Header triangle highlight */
 
