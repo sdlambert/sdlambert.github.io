@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: .5em;
+	margin: .3em 0;
 }
 
 h1 {
@@ -52,6 +52,11 @@ a:hover {
 
 a:active {
 	color: #003333;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 nav {
@@ -107,20 +112,15 @@ a.base {
 }
 
 hr {
-	display: block;
-	margin: 20px auto;
-	border: 0;
-	width: 90%;
-	height: 1px;
-	background-color: #999999;
+	visibility: hidden;
 }
 
 /* Aside */
 
 aside {
 	float: left;
-	width: 25%;
-	padding: 0 1em;
+	width: 30%;
+	padding: 0 2em;
 	height: auto;
 	text-align: right;
 }
@@ -133,8 +133,6 @@ aside section, aside div {
 aside img {
 	max-height: 200px;
 	max-width: 200px;
-	width: 100%;
-	height: 100%;
 }
 
 .blurb {
@@ -145,31 +143,27 @@ aside img {
 	margin-bottom: 1em;
 }
 
-aside hr {
-	visibility: hidden;
-}
 
 /* Main article & content */
 
 .main {
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	float: left;
-	width: 75%;
+	width: 70%;
 	border-left: 1px solid #999999;
 	padding: 0 2em;
 }
 
 article {
 	display: inline-block;
-	padding: 0 1.5em;
 }
 
-article > p {
+article p {
 	padding: 0.5em 0;
 }
 
 .post-date {
-	margin: .5em 0;
+	padding: 0;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -194,10 +188,6 @@ article > p {
 
 .post-content ol li {
 	list-style: decimal;
-}
-
-.post-content > p {
-	margin-bottom: 1em;
 }
 
 .post-content p > code {
@@ -250,37 +240,53 @@ article > p {
 	border: 1px solid #999999;
 	border-radius: 3px;
 	overflow: auto;
-	padding: .5em;
+	padding: .5em 1em;
 }
 
 .about p {
 	font-style: italic;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .about img {
 	width: auto;
 	float: left;
-	padding-right: 1em;
+	padding: .5em 1em .5em 0;
 }
+
+.left {
+	float: left;
+	padding-right: 1em;
+	max-width: 150px;
+}
+
 
 
 /* Header triangle highlight */
 
-.triangle {
+.h1-triangle, .h2-triangle {
 	position: relative;
 }
 
-.triangle::before {
+.h1-triangle::before, .h2-triangle::before {
 	position: absolute;
-	left: -20px;
-	top: 8px;
 	vertical-align: middle;
+	left:-20px;
 	width: 12px;
 	height: 16px;
 	background: url("/img/triangle-icon.png");
 	content: "";
 }
+
+.h1-triangle::before {
+	top: 12px;
+}
+
+.h2-triangle::before {
+	top: 8px;
+}
+
 
 /* Footer */
 
@@ -288,7 +294,9 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	color: #999999;
-	padding: 2%;
+	padding: 0;
+	margin: 2em;
+	border-top: 1px solid #999999;
 }
 
 .footer-list a {
@@ -352,7 +360,7 @@ footer {
 		width: 100%;
 		max-width: 100%;
 		float: none;
-		padding: 0 2em 2em 2em;
+		padding: 0 2em;
 		text-align: left;
 	}
 
@@ -360,10 +368,6 @@ footer {
 		display: block;
 		float: left;
 		margin: 0;
-	}
-
-	aside hr {
-		visibility: visible;
 	}
 
 	.title {
@@ -386,6 +390,10 @@ footer {
 	.main {
 		width: 100%;
 		border: none;
+		margin-top: 1em;
+	}
+	.main > section:first-child, .main > article:first-child {
+		border-top: 1px solid #999999;
 	}
 
 	.footer-nav {
@@ -395,6 +403,14 @@ footer {
 	.footer-list li {
 		margin: 0 auto;
 		padding: .5em .5em 0 .5em;
+	}
+
+	.h1-triangle {
+		margin-left: .65em;
+	}
+
+	.h2-triangle {
+		margin-left: .875em;
 	}
 }
 
@@ -422,23 +438,52 @@ footer {
 	}
 
 	aside, .main {
-		padding: 0 .5em;
+		padding: 0 1em;
 		height: 100%;
 	}
 
-	aside section, aside div {
+	aside {
+		text-align: center;
+		margin: 0;
+	}
+
+	aside div {
 		margin: .25em 0;
 	}
 
-	.blog-title {
-		text-align: center;
+	.logo, .blurb {
+		text-align: left;
 	}
 
-	.logo, .blurb {
-		width: 50%;
+	.logo {
+		width: 33.3333%;
+	}
+
+	.blurb {
+		width: 66.6666%;
 	}
 
 	.icons, .footer-nav, .copyright {
 		width: 80%;
+	}
+
+	.left {
+		width: 30%;
+	}
+
+	.h1-triangle {
+		margin-left: .65em;
+	}
+
+	.h2-triangle {
+		margin-left: .875em;
+	}
+
+	.about p {
+		overflow: visible;
+	}
+
+	footer {
+		margin: 1em;
 	}
 }

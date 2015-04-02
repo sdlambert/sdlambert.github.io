@@ -3,7 +3,6 @@ title: An Introduction to Jekyll, the Static Blog Generator
 layout: post
 tags:
  - jekyll
-image_path: "/img/jekyll-logo-2x.png"
 description: "An introduction to Jekyll, the blogging platform that allows you to configure and generate static webpages."
 ---
 ![The Jekyll Logo](/img/jekyll-logo-2x.png "Jekyll, a static blogging platform")
@@ -12,7 +11,7 @@ A few months ago, I sat down to create this blog so I could document all the thi
 
 <!--more-->
 
-###What is Jekyll?
+##What is Jekyll?
 
 Jekyll is a "blog-aware", highly configurable static site generator written in Ruby. It builds a static website using a predefined directory structure, site-wide and post-specific variables and layout templates. Blog posts are written in a markdown syntax and converted into HTML, which Jekyll integrates into a chronological directory structure.
 
@@ -20,7 +19,7 @@ Each page on your blog consists of various templates, which act as the building 
 
 One of the remarkable things I like about Jekyll is the ability to configure my blog down to the smallest detail. And while it offers near infinite customization, one could just as well pair it with a popular framework such as Bootstrap. Most importantly, it generates a static site, which is what we need to make it fully compatible with Github Pages. Jekyll allows me to work directly within my GitHub repository so I can update remotely without the need for a third party hosting solution.
 
-###How to Get Started
+##How to Get Started
 
 In order to get Jekyll up and running, you'll need Linux, Unix or Mac OS X installed on your computer. (You can [install Jekyll on Windows][11], it just takes a bit more effort.) You will need to [install Ruby][5] and [Node][12] if you haven't already. From the command prompt simply enter the following commands:
 
@@ -48,7 +47,7 @@ With this option turned on, I'm able to work on my blog and all its pages locall
 
 Jekyll can also be used remotely with GitHub, where changes you make to your repository can be rendered by GitHub and placed accordingly into your GitHub pages. More on that in a bit.
 
-###Files and Directory Structure
+##Files and Directory Structure
 
 The most important file resides in your project's root, and that is the `_config.yml` file. This file uses YAML syntax for all of the configuration information in your project. Here you can tell Jekyll which markdown rendering engine you would prefer to render your pages, or add site-wide variables for use in template snippets within your HTML.
 
@@ -75,13 +74,13 @@ You can either point your browser to this directory, or point Jekyll to your loc
 
 The nice thing about GitHub is that it provides native support for rendering your Jekyll files to its GitHub Pages. Once I commit the changes to the  remote stored on GitHub, it automatically renders the files for display on GitHub Pages. This way, I can render and view local changes as I develop, and let GitHub worry about rendering the master copy for public view.
 
-###Customization
+##Customization
 
 When you first download and run Jekyll, it will populate all of the directories and files needed to create a static blog. It will also generate some basic CSS and a few sample pages that show off some of what Jekyll is capable of. I chose to start from scratch, but there are plenty of resources out there for existing themes in order to begin using Jekyll immediately.
 
 Under the hood, the real power of Jekyll comes from its ability to customize every aspect of the page. The ability to generate content really comes into play through the Liquid templating language, which allows you to do do simple queries and iterations over the data in your posts. I'll be writing a bit more about some of these customizations in the future, but for now all you need to know is that Liquid is what allows you to create static pages in a truly dynamic way. (Here's a great place to start [learning more about Liquid][7].)
 
-###Conclusion
+##Conclusion
 
 Jekyll is not going to replace Wordpress or Drupal any time soon, but for static blog pages it is probably one of the most powerful tools out there. It boasts near limitless customization and yet it offers a relatively straightforward package out of the box.
 

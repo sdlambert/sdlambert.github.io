@@ -3,7 +3,8 @@
 {% include  aside.html %}
 	<div class="main">
 		<article>
-			<h2><span class="triangle">{{  page.title  }}</span></h2>
+			<h1><span class="h1-triangle">{{  page.title  }}</span></h1>
+			<p class="post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
 			<section class="post-content">
 				{{  content | indent_tab: 4 }}
 			</section>
