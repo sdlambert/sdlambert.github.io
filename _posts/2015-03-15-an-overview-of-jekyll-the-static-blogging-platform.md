@@ -8,7 +8,7 @@ description: "An introduction to Jekyll, the blogging platform that allows you t
 ---
 ![The Jekyll Logo](/img/jekyll-logo-2x.png "Jekyll, a static blogging platform")
 
-A few months ago, I sat down to create this blog so I could document all the things I'll be learning about web development and I work to build up my portfolio. I also wanted to learn git and give myself a place to build things and experiment. I took a look at several options, but eventually settled on [Jekyll][1], a static blogging platform that integrates with  [GitHub Pages][2]. I chose Jekyll because it offered a great way for me to combine the technologies I wanted to practice and learn: HTML, CSS, Javscript, git, and the Linux command line. Jekyll hit all the right notes for me, and it might just do the same for you.
+A few months ago, I sat down to create this blog so I could document all the things I'll be learning about web development and I work to build up my portfolio. I also wanted to learn git and give myself a place to build things and experiment. I took a look at several options, but eventually settled on [Jekyll][1], a static blogging platform that integrates with  [GitHub Pages][2]. I chose Jekyll because it offered a great way for me to combine the technologies I wanted to practice and learn: HTML, CSS, Javascript, git, and the Linux command line. Jekyll hit all the right notes for me, and it might just do the same for you.
 
 <!--more-->
 
@@ -73,13 +73,13 @@ The `_plugins` folder allows you to further customize your blog by running custo
 Lastly, the `_site` directory is where your rendered site will be posted by default. (You can edit the location of your rendered site in your `_config.yml`.)
 You can either point your browser to this directory, or point Jekyll to your local hosting directory that you may already have up and running. My personal setup is hosting locally through Apache, so I have Jekyll dump my files into a local directory for development.
 
-The nice thing about GitHub is that it provides native support for rendering your Jekyll files to its GitHub Pages. Once I commit the changes to the  remote stored on GitHub, it automatically renders the files for display on Github Pages. This way, I can render and view local changes as I develop, and let GitHub worry about rendering the master copy for public view.
+The nice thing about GitHub is that it provides native support for rendering your Jekyll files to its GitHub Pages. Once I commit the changes to the  remote stored on GitHub, it automatically renders the files for display on GitHub Pages. This way, I can render and view local changes as I develop, and let GitHub worry about rendering the master copy for public view.
 
 ###Customization
 
 When you first download and run Jekyll, it will populate all of the directories and files needed to create a static blog. It will also generate some basic CSS and a few sample pages that show off some of what Jekyll is capable of. I chose to start from scratch, but there are plenty of resources out there for existing themes in order to begin using Jekyll immediately.
 
-Under the hood, the real power of Jekyll comes from its ability to customize every aspect of the page. The ability to generate content really comes into play through the Liquid templating language, which allows you to do do simple queries and iterations over the data in your posts. I'll be writing a bit more about some of these customizations in the future, but for now all you need to know is that the Liquid templating language is what allows you to create static pages in a truly dynamic way. (Here's a great place to start [learning more about Liquid][7].)
+Under the hood, the real power of Jekyll comes from its ability to customize every aspect of the page. The ability to generate content really comes into play through the Liquid templating language, which allows you to do do simple queries and iterations over the data in your posts. I'll be writing a bit more about some of these customizations in the future, but for now all you need to know is that Liquid is what allows you to create static pages in a truly dynamic way. (Here's a great place to start [learning more about Liquid][7].)
 
 ###Conclusion
 
