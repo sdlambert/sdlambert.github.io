@@ -1,7 +1,7 @@
 ---
 title: My portfolio
 layout: portfolio
-#image_path: Put the image path here
+image_path: "/img/scott-dev-logo.png"
 ---
 
 #My portfolio

@@ -4,6 +4,8 @@ layout: post
 tags:
  - jekyll
 description: "An introduction to Jekyll, the blogging platform that allows you to configure and generate static webpages."
+#metadata
+image_path: "/img/jekyll-logo-2x.png"
 ---
 ![The Jekyll Logo](/img/jekyll-logo-2x.png "Jekyll, a static blogging platform")
 

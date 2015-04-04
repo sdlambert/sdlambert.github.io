@@ -1,7 +1,7 @@
 ---
 title: About me
 layout: about
-#image_path: Put the image path here
+image_path: "/img/scott-dev-logo.png"
 ---
 #About me
 
