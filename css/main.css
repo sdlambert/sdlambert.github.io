@@ -135,6 +135,14 @@ aside img {
 	max-width: 200px;
 }
 
+.title {
+	text-decoration: none;
+}
+
+.title:link, .title:visited {
+	color: inherit;
+}
+
 .blurb {
 	margin-top: 1em;
 }
@@ -162,11 +170,21 @@ article p {
 	padding: 0.5em 0;
 }
 
+/* Home page excerpt specific */
+
 .post-date {
 	padding: 0;
 	font-size: 18px;
 	font-weight: bold;
 }
+
+.read-more {
+	display: block;
+	float: right;
+	margin-bottom: 2em;
+}
+
+
 
 /* Portfolio specific */
 
@@ -179,11 +197,12 @@ article p {
 }
 
 .post-content ul {
-	margin-left: 1em;
+	margin-left: 2em;
 }
 
 .post-content ul li {
 	list-style: disc;
+	padding: 0 0 .5em .5em;
 }
 
 .post-content ol li {

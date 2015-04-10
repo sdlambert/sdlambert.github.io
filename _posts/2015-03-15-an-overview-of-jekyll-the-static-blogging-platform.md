@@ -86,7 +86,7 @@ Under the hood, the real power of Jekyll comes from its ability to customize eve
 
 Jekyll is not going to replace Wordpress or Drupal any time soon, but for static blog pages it is probably one of the most powerful tools out there. It boasts near limitless customization and yet it offers a relatively straightforward package out of the box.
 
-That being said, it does rely on a hodge podge of syntaxes and languages and I would have benefited knowing more about them prior to creating my blog. I would recommend reading up on the syntax for markdown, YAML, and Liquid to be truly comfortable with the entirety of Jekyll. (Ruby, although helpful to know, is not required reading.)
+That being said, it does rely on a hodge podge of syntaxes and languages and I would have benefited from knowing more about each of them prior to diving in. I would recommend reading up on the syntax for markdown, YAML, and Liquid to be truly comfortable with the entirety of Jekyll. (Ruby, although helpful to know, is not required reading.)
 
 Despite my own shortcomings, Jekyll remains a powerful tool to build a static, "blog-aware" site. I love being able to make small tweaks to my site and see the changes show up immediately. It integrates with my GitHub page flawlessly and right out of the box. Most of all, being able to dynamically generate content for my pages is great. If you're looking to write a blog, and thinking about hosting on GitHub Pages, consider Jekyll.
 
