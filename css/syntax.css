@@ -5,7 +5,7 @@ blockquote p {
 }
 
 pre, code {
-	font-family: Consolas, "Droid Sans Mono", Menlo-Regular, "Courier New", monospace;
+	font-family: Consolas, "Droid Sans Mono", Menlo-Regular, monospace;
   font-size: 16px;
 }
 
