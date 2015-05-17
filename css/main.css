@@ -136,7 +136,11 @@ aside img {
 }
 
 .title {
-	text-decoration: none;
+	display: block;
+ 	text-decoration: none;
+	font-size: 32px;
+	font-weight: bold;
+	margin: .3em 0;
 }
 
 .title:link, .title:visited {
