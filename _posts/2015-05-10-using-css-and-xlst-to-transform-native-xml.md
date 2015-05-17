@@ -103,15 +103,15 @@ Thanks for reading!
 Additional Reading:
 
 * [XSLT on Mozilla Developer Network][5]
-* [XSLT Tutorials on Tutorialspoint.com][6]
+* [XSLT Tutorials on IBM developerWorks][6]
 
 
 [1]: http://en.wikipedia.org/wiki/XSLT
-[2]: {{ site.localurl }}/demo/xslt/inventorystyle.xsl
-[3]: {{ site.localurl }}/demo/xslt/inventorytags.xml
-[4]: {{ site.localurl }}/demo/xslt/customerownertags.xml
+[2]: {{ site.url }}/demo/xslt/inventorystyle.xsl
+[3]: {{ site.url }}/demo/xslt/inventorytags.xml
+[4]: {{ site.url }}/demo/xslt/customerownertags.xml
 [5]: https://developer.mozilla.org/en-US/docs/Web/XSLT
-[6]: http://www.tutorialspoint.com/xslt/
+[6]: http://www.ibm.com/developerworks/xml/tutorials/x-introxslt/x-introxslt.html
 
 
 
