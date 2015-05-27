@@ -16,7 +16,7 @@
 
 	function fibonacci(n) {
 		var i, sequence = [1, 1]; // We start our sequence at [1, 1]
-		for (i = 1; i < n; i++)
+		for (i = 1; i < n - 1; i++)
 			sequence.push(sequence[i] + sequence[i - 1]);
 		return sequence;
 	}
