@@ -1,0 +1,48 @@
+.main {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+form {
+	padding: 20px;
+	text-align: center;
+}
+
+button {
+	width: 100px;
+	display: inline-block;
+}
+
+.input {
+	margin: 20px auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	opacity: 0;
+	width: 150px;
+	margin: 5px 65px;
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+}
+
+.animation {
+	transition: opacity .5s ease-in;
+	opacity: 1.0;
+}
+
+.bordered {
+	border: 1px solid #999;
+	border-radius: 5px;
+}
