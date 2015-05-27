@@ -108,7 +108,7 @@ Before we conclude, I should give credit where credit is due. There were a coupl
 
 I designed the workflow with a few goals in mind: force myself to learn and use `git`, adapt best practices from industry to solo development, and keep it as simple as possible. I think my workflow hits all of those marks. It really fits my needs, and hopefully it meets yours, too!
 
-Additional resources:
+Additional reading:
 
 * [GitHub "Hello World" Exercise][7]
 * [Pro Git by Scott Chacon and Ben Straub][8]

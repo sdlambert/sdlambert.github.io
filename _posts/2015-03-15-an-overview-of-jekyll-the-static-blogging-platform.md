@@ -90,7 +90,7 @@ That being said, it does rely on a hodge podge of syntaxes and languages and I w
 
 Despite my own shortcomings, Jekyll remains a powerful tool to build a static, "blog-aware" site. I love being able to make small tweaks to my site and see the changes show up immediately. It integrates with my GitHub page flawlessly and right out of the box. Most of all, being able to dynamically generate content for my pages is great. If you're looking to write a blog, and thinking about hosting on GitHub Pages, consider Jekyll.
 
-Additional resources:
+Additional reading:
 
 * [Jekyll Documentation][10] - All the details you could ask for
 * [Jekyll Themes][8] - Pre-built themes for Jekyll
