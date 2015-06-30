@@ -6,10 +6,10 @@ tags:
  - css
 description: "A quick showcase of XLST and how to use it to transform native XML, based off some work that I did for a school assignment."
 #metadata
-image_path: "/img/xlst.png"
+image_path: "/img/xlst-white.png"
 ---
 
-![Title image that reads 'Using CSS and XSLT to Transform Native XML'](/img/xslt.png "Git Solo")
+![Title image that reads 'Using CSS and XSLT to Transform Native XML'](/img/xslt-white.png "Git Solo")
 
 Towards the end of our SQL class we covered the process of converting our query output into XML. We didn't dive too much into the topic itself, but we covered the basics of transforming our output using [XSLT][1], or Extensible Stylesheet Language Transformations. Using our XML output we were able translate our XML into standard HTML tags and utilize CSS to display the information in an organized way. I'll break down what I learned and how you can display your back-end data using XSLT, too.
 

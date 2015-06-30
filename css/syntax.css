@@ -19,9 +19,8 @@ section > pre {
 	margin-bottom: 1em;
 }
 
-pre, .highlight {
+pre {
 	padding: .25em;
-	white-space: pre-wrap;
 }
 
 blockquote, .highlight {

@@ -11,7 +11,6 @@ html {
 body {
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	word-spacing: .2em;
 
 }
 
@@ -474,6 +473,10 @@ footer {
 		margin: .25em 0;
 	}
 
+	article {
+		display: inline-block;
+	}
+
 	.logo, .blurb {
 		text-align: left;
 	}
@@ -504,6 +507,11 @@ footer {
 
 	.about p {
 		overflow: visible;
+	}
+
+	pre, .highlight {
+		white-space: pre;
+		overflow: auto;
 	}
 
 	footer {
