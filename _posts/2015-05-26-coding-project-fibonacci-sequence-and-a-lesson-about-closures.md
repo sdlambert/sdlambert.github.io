@@ -8,7 +8,7 @@ description: "A simple Javascript code project that displays the Fibonacci Seque
 image_path: "/img/fibonacci.png"
 ---
 
-![Title image that reads 'Coding Project: Fibonacci Sequence' with a seashell showing off the Fibonacci sequence in nature](/img/fibonacci.png "Coding Project: Fibonacci Sequence")
+![Image of a seashell on a background of mathematical formulae](/img/fibonacci.png "Fibonacci sequence in nature")
 
 In this quick coding exercise I implement the Fibonacci sequence using Javascript, allowing the user to prompt how many numbers in the sequence they would like to calculate. The function will then return that many numbers in the sequence.
 
@@ -105,7 +105,7 @@ Additional reading:
 * [5 Array Methods That You Should Be Using Right Now][11]
 
 
-*Images courtesy of [jitze][X] and [dullhunk][Y] via [CC v2.5 license][Z].*
+*Images courtesy of [jitze][12] and [dullhunk][13] via [everystockphoto.com][14], using the [CC v2.5 license][15].*
 
 [1]:http://en.wikipedia.org/wiki/Fibonacci_number
 [2]: https://github.com/karan
@@ -118,6 +118,7 @@ Additional reading:
 [9]: http://markdalgleish.com/presentations/gettingclosure/
 [10]: http://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/
 [11]: http://colintoh.com/blog/5-array-methods-that-you-should-use-today
-[X]: http://www.everystockphoto.com/photographer.php?photographer_id=63201
-[Y]: http://www.everystockphoto.com/photographer.php?photographer_id=12070
-[Z]: http://creativecommons.org/licenses/by/2.5/
+[12]: http://www.everystockphoto.com/photographer.php?photographer_id=63201
+[13]: http://www.everystockphoto.com/photographer.php?photographer_id=12070
+[14]: http://www.everystockphoto.com
+[15]: http://creativecommons.org/licenses/by/2.5/

@@ -6,10 +6,10 @@ tags:
  - css
 description: "A quick showcase of XLST and how to use it to transform native XML, based off some work that I did for a school assignment."
 #metadata
-image_path: "/img/xlst-white.png"
+image_path: "/img/xlst-butterfly.png"
 ---
 
-![Title image that reads 'Using CSS and XSLT to Transform Native XML'](/img/xslt-white.png "Git Solo")
+![Image of a butterfly, courtest of Magee via Pixabay](/img/xslt-butterfly.png "Butterfly by Magee via Pixabay")
 
 Towards the end of our SQL class we covered the process of converting our query output into XML. We didn't dive too much into the topic itself, but we covered the basics of transforming our output using [XSLT][1], or Extensible Stylesheet Language Transformations. Using our XML output we were able translate our XML into standard HTML tags and utilize CSS to display the information in an organized way. I'll break down what I learned and how you can display your back-end data using XSLT, too.
 
@@ -105,6 +105,8 @@ Additional Reading:
 * [XSLT on Mozilla Developer Network][5]
 * [XSLT Tutorials on IBM developerWorks][6]
 
+*Image courtesy of [magee][7] via [Pixabay][8], used under the Creative Commons License*
+
 
 [1]: http://en.wikipedia.org/wiki/XSLT
 [2]: {{ site.url }}/demo/xslt/inventorystyle.xsl
@@ -112,6 +114,8 @@ Additional Reading:
 [4]: {{ site.url }}/demo/xslt/customerownertags.xml
 [5]: https://developer.mozilla.org/en-US/docs/Web/XSLT
 [6]: http://www.ibm.com/developerworks/xml/tutorials/x-introxslt/x-introxslt.html
+[7]: https://pixabay.com/en/users/magee-830963/
+[8]: https://pixabay.com/en/butterfly-wings-insect-common-crow-686117/
 
 
 

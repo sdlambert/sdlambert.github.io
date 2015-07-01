@@ -254,7 +254,15 @@ article p {
 }
 
 .blog-page ul {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+}
+
+.blog-page ul li {
+	margin: .5em 0;
+}
+
+.blog-page h3 {
+	margin: .5em 0 1em 0;
 }
 
 .about {

@@ -42,13 +42,12 @@
 
 	// Display the Fibonacci sequence
 	function printSequence(e) {
-		var i, textNode, sequence;
+		// Get Fibonacci sequence
+		var sequence = fibonacci(slider.value);
 		// prevent default submit behavior
 		e.preventDefault();
 		// remove any previous sequence elements
 		removePrevious();
-		// Get Fibonacci sequence
-		sequence = fibonacci(slider.value);
 		// Create child <li>'s
 		sequence.forEach(function(i, idx) {
 			var li = document.createElement("li");
