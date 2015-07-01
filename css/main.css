@@ -397,8 +397,21 @@ footer {
 		height: 2em;
 	}
 
+	nav ul {
+		padding: 0;
+		float: none;
+		width: 100%;
+	}
+
 	nav li {
 		padding: .5em 0;
+		float: left;
+		margin: 0 auto;
+		width: 25%;
+	}
+
+	nav li a {
+		text-align: center;
 	}
 
 	.logo, .blurb {
@@ -463,12 +476,6 @@ footer {
 		padding: 0;
 		float: none;
 		width: 100%;
-	}
-
-	nav li {
-		float: left;
-		margin: 0 auto;
-		width: 25%;
 	}
 
 	nav li a {
