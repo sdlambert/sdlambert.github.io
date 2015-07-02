@@ -182,9 +182,10 @@ article p {
 }
 
 .read-more {
+	width: 100%;
 	display: block;
-	float: right;
-	margin-bottom: 2em;
+	text-align: right;
+	margin-bottom: 1em;
 }
 
 
