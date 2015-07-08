@@ -1,12 +1,15 @@
+---
+# front matter for Jekyll
+---
+
+/* Imports */
+
+@import "reset";
+@import "fonts";
+@import "borderbox";
+@import "syntax";
+
 /* General CSS */
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
 
 body {
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;

@@ -16,6 +16,10 @@ copyright:              2015
 excerpt_separator:      <!--more-->
 gems:
   - jekyll-sitemap
+sass:
+    sass_dir: _sass
+
+
 
 # Author
 author:
