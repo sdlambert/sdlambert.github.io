@@ -1,28 +1,28 @@
 ---
 ---
 
-/* Imports */
+// Imports
 
 @import "reset";
 @import "fonts";
 @import "borderbox";
 @import "syntax";
 
-/* Colors */
+// Colors
 
-$black: #000000;
-$grey: #999999;
+$black: #000;
+$grey: #999;
 $off_white: #dcdcdc;
-$white: #ffffff;
-$deep_teal: #003333;
-$light_teal: #669999;
+$white: #fff;
+$deep_teal: #033;
+$light_teal: #699;
 
-/* General CSS */
+// General CSS
 
 body {
 	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	font-size: 16px;
-
+	word-spacing: .1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +47,7 @@ p {
 	line-height: 1.5em;
 }
 
-/* links */
+// links
 
 a {
 	&:link {
@@ -69,6 +69,9 @@ a {
 	&.base {
 		font-weight: bold;
 		color: $deep_teal;
+		&:hover {
+			color: $light_teal
+		}
 	}
 }
 
@@ -102,14 +105,14 @@ nav {
 	}
 }
 
-/* Clearfix for floats */
+// Clearfix for floats
 
 .clearfix {
 	display: block;
 	clear: both;
 }
 
-/* Main blog sections */
+// Main blog sections
 
 .container {
 	margin: 0 auto;
@@ -127,7 +130,7 @@ hr {
 	visibility: hidden;
 }
 
-/* Aside */
+// Aside
 
 aside {
 	float: left;
@@ -167,10 +170,9 @@ aside {
 	}
 }
 
-/* Main article & content */
+// Main article & content
 
 .main {
-	font-family: "PT Sans", Arial, Helvetica, sans-serif;
 	float: left;
 	width: 70%;
 	border-left: 1px solid $grey;
@@ -185,7 +187,7 @@ article {
 	}
 }
 
-/* Home page excerpt specific */
+// Home page excerpt specific
 
 .post-date {
 	padding: 0;
@@ -200,11 +202,11 @@ article {
 	margin-bottom: 1em;
 }
 
-/* Portfolio specific */
+// Portfolio specific
 
 
 
-/* Post content specific */
+// Post content specific
 
 .post-content {
 	li, ul, ol {
@@ -229,7 +231,7 @@ article {
 	}
 }
 
-/* Tags */
+// Tags
 
 .tags {
 	margin: 1em 0;
@@ -306,7 +308,7 @@ article {
 	max-width: 150px;
 }
 
-/* Header triangle highlight */
+// Header triangle highlight
 
 .h1-triangle, .h2-triangle {
 	position: relative;
@@ -331,7 +333,7 @@ article {
 }
 
 
-/* Footer */
+// Footer
 
 footer {
 	text-align: center;

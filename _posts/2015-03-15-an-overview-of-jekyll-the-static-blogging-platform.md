@@ -1,5 +1,5 @@
 ---
-title: An Introduction to Jekyll, the Static Blog Generator
+title: "An Introduction to Jekyll, the Static Blog Generator"
 layout: post
 tags:
  - jekyll
