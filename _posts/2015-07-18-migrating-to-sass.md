@@ -9,7 +9,7 @@ description: "In this post I'll explain what it is that Sass does and review the
 image_path: "/img/sass-logo.png"
 ---
 
-![Modified Sass Logo](/img/sass-logo.png "A modified Sass Logo, courtesy of http://sass-lang.com via the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.")
+![Sass Logo](/img/sass-logo.png "Sass logo")
 
 SASS, short for Syntactically Awesome Stylesheets, is a CSS extension language that seeks to improve on the fundamentals of CSS by adding concepts from modern programming languages. In this post, I'll discuss how Sass works, cover the SCSS syntax, and give some examples of how I used Sass on this blog.
 
@@ -234,6 +234,8 @@ Additional reading:
 * [A List Apart: A Vision for Our Sass][12]
 * [CSS Tricks: Sass Style Guide][14]
 
+*Modified Sass logo added via the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.*
+
 [1]: http://sass-lang.com/install
 [2]: http://jekyllrb.com/docs/assets/
 [3]: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variables_
@@ -248,6 +250,7 @@ Additional reading:
 [12]: http://alistapart.com/article/a-vision-for-our-sass
 [13]: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 [14]: https://css-tricks.com/sass-style-guide/
+[15]: http://sass-lang.com/
 
 
 
