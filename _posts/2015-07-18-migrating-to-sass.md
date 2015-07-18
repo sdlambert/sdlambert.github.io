@@ -229,6 +229,7 @@ Add Sass to your project today to start saving time and effort and begin writing
 
 Additional reading:
 
+* [Sass Homepage][15]
 * [The Sass Way: Beginner Guides & Tutorials on Sass and Compass][10]
 * [Sitepoint: 8 Tips Help You Get the Best Out of Sass][11]
 * [A List Apart: A Vision for Our Sass][12]
