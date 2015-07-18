@@ -42,7 +42,7 @@ The best way to understand Sass is to view it as an extension of CSS. That is, e
 {% highlight scss %}
 .example {
     border: 1px solid $dark_blue; // I won't appear in the output
-    width: 75%; // But I will
+    width: 75%; /* But I will */
 }
 {% endhighlight %}
 
