@@ -142,6 +142,7 @@ aside {
 	section, div {
 		width: 100%;
 		margin: 0;
+		margin-bottom: 1em;
 	}
 
 	img {
@@ -164,10 +165,12 @@ aside {
 
 .blurb {
 	margin-top: 1em;
+}
 
-	p {
-		margin-bottom: 1em;
-	}
+.aside_icons {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
 }
 
 // Main article & content
@@ -342,6 +345,10 @@ footer {
 	padding: 0;
 	margin: 2em;
 	border-top: 1px solid $grey;
+
+	div {
+		padding-bottom: 1em;
+	}
 }
 
 .footer-list {
@@ -350,34 +357,25 @@ footer {
 	a {
 		text-decoration: none;
 
-		&:link {
+		&:link, &:visited, &:active {
 			color: $grey;
 		}
-
-		&:visited {
-			color: $grey;
-		}
-
 		&:hover {
 			color: $light_teal;
 			text-decoration: underline;
 		}
-
-		&:active {
-			color: $grey;
-		}
 	}
 	li {
 		display: inline-block;
-		padding: 1em 1em;
+		padding: 0 1em;
 	}
 }
 
-.icons, .footer-nav, .copyright {
+.footer-nav, .copyright {
 	display: inline-block;
 	width: 50%;
-	margin: 0 auto;
 }
+
 
 .shouts {
 	display: block;
@@ -387,9 +385,9 @@ footer {
 
 .social {
 	display: inline-block;
-	margin: auto;
+	margin: 0 auto;
 	width: 25%;
-	padding: 10px;
+	max-width: 80px;
 	float: left;
 }
 
