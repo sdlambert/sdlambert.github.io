@@ -2,24 +2,27 @@
 (function main() {
 	"use strict";
 
-	var btn, text, textArea;
+	var text, textIn, result;
 
 	function init () {
-		textArea = document.getElementById("text");
-		btn = document.getElementById("parse");
-		btn.addEventListener("click", parseText, false);
+		textIn = document.getElementById("text");
+		result = document.getElementById("result");
+		textIn.addEventListener("input", parseText, false);
 	}
 
 	function parseText (e) {
 		var uniques = [],
-				sortedWords = {},
-				result;
-		e.preventDefault();
-		text = textArea.value;
-		// transform to lowercase
+				sortedWords = {};
+		// grab value
+		text = textIn.value;
+
+		// remove all punctuation, transform to lowercase
 		text = text.split(" ").map(function (word) {
-			return word.toLowerCase();
+			return word.split("").filter(function (letter) {
+				return /\w/.test(letter);
+			}).join("").toLowerCase();
 		});
+
 		// remove duplicates and sort alphabetically
 		uniques = text.filter(function (word, index) {
 			if (text.indexOf(word, index + 1) === -1)
@@ -34,7 +37,7 @@
 		});
 
 		// Turn into JSON, output
-		result = document.getElementById("result");
+
 		result.value = JSON.stringify(sortedWords);
 	}
 
