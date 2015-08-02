@@ -1,73 +1,94 @@
-// Lorem ipsum chat
+/*
+ * Main module for the lorem ipsum chat, declares local vars, calls init() on
+ *  load
+ *
+ */
+
 (function main() {
 	"use strict";
 
-	var words, // object for lorem ipsum JSON
-			xhr, // XMLHttpRequest object
-			chatInput = document.getElementById("chat"), // chat input
-			chatHistory = document.getElementById("chat_history");
+	// Local vars
+	var words,       // object for lorem ipsum JSON
+			xhr,         // XMLHttpRequest object
+			chatInput,   // chat input
+			chatHistory; // chat history window
 
+
+/*
+ * init - initializes XMLHttpRequest, adds event listener
+ *
+ */
 	function init () {
-		// Get JSON object using AJAX
+
+		// Get JSON using AJAX, parse to obj
 		xhr = getXHR();
 		xhr.open("get", "data/words.json", true);
 		xhr.send(null);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState === 4 && xhr.status === 200)
-				words = JSON.parse(xhr.responseText); // assign to words object
-			else // remove or parse errors?
+				words = JSON.parse(xhr.responseText);
+			else
 				console.log("Ready state:" + xhr.readyState + " Status: " + xhr.status);
 		};
 
-		// listen for enter key
+		// initialize variables
+		chatInput = document.getElementById("chat");
 		chatInput.addEventListener("keyup", parseText, false);
+		chatHistory = document.getElementById("chat_history");
 	}
 
+
+/**
+ * parseText                     - listens for enter key
+ * @param {Event} event          - keyup from chatInput
+ *
+ */
 	function parseText(event) {
 		var message;
 
 		if (event.keyCode === 13) {
 			message = chatInput.value;
 
-			// reset chat prompt
+			// message is "sent" and triggers bot "response"
 			chatInput.value = "";
-
-			// send message
 			sendMessage("user", message);
-
-			// bot respond
 			respondTo(message);
 		}
 	}
 
+
+	/*
+	 * respondTo                   - responds to the user's message
+	 * @param  {String} message    - incoming message string
+	 *
+	 */
 	function respondTo(message) {
-		// bot responds here
-		var response = "",
-				numWords,
-				numChars,
-				selectedWord,
-				msgLength;
+
+		var response = "", // String to hold generated response
+				numWords,      // number of words in response
+				numChars,      // number of characters in word
+				selectedWord,  // index of selected word (by length)
+				msgLength;     // number of words in message String
 
 		// short sentences typically get short responses.
 		if (message.indexOf(" ") === -1)
 			msgLength = 1;
 		else
 			msgLength = message.split(" ").length;
-		// maximum response is 2 more words than the incoming message
+		// maximum response length is 2 more words than the incoming message
 		numWords = Math.ceil(Math.random() * (msgLength + 2));
 
 		// build the response
 		while (numWords > 0) {
 
-			// get length by frequency (see function)
-			numChars = wordLengthByFrequency();
-
 			// pick a word, but don't repeat the last one!
-			do
+			do {
+				numChars = wordLengthByFrequency();
 				selectedWord = Math.floor(Math.random() * words[numChars].length);
+			}
 			while (words[numChars][selectedWord] == response.split(" ").pop());
 
-			// no response yet? capitalize it. otherwise, append it
+			// Capitalize first word only
 			if (!response) {
 				response = words[numChars][selectedWord].split("");
 				// neat trick to filter out the empty string ""
@@ -92,25 +113,36 @@
 	}
 
 
+	/**
+	 * sendMessage  -
+	 * @param  {String} from       - "user", "bot" class
+	 * @param  {String} message    - message
+	 *
+	 */
 	function sendMessage(from, message) {
 		var p, div;
 
-		// create paragraph element, add message
+		// paragraph
 		p = document.createElement("p");
 		p.appendChild(document.createTextNode(message));
 		p.classList.add(from);
 
-		// create div, add paragraph
+		// div
 		div = document.createElement("div");
 		div.appendChild(p);
 		div.classList.add("full");
 
+		// chatHistory
 		chatHistory.appendChild(div);
 		chatHistory.scrollTop = chatHistory.scrollHeight;
 	}
 
-	// Our object only has words up to 16 characters in length
 
+	/**
+	 * wordLengthByFrequency - Normal (Gaussian) distribution for word lengths.
+	 *  Higher length words are called less frequently.
+	 *
+	 */
 	function wordLengthByFrequency() {
 
 		var rndm = Math.floor(Math.random() * 100);
@@ -149,6 +181,11 @@
 				return 16;
 	}
 
+
+	/**
+	 * getXHR - XMLHttpRequest function
+	 *
+	 */
 	function getXHR() {
 		if (window.XMLHttpRequest) { // Mozilla, Safari, IE7+ ...
 			xhr = new XMLHttpRequest();
