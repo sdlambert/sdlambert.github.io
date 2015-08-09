@@ -46,7 +46,7 @@
 	function parseText(event) {
 		var message;
 
-		if (event.keyCode === 13) {
+		if (event.keyCode === 13 && chatInput.value) {
 			message = chatInput.value;
 
 			// message is "sent" and triggers bot "response"
@@ -68,15 +68,25 @@
 				numWords,      // number of words in response
 				numChars,      // number of characters in word
 				selectedWord,  // index of selected word (by length)
-				msgLength;     // number of words in message String
+				delay,         // chat bot delay in ms
+				msgLength,     // number of words in @message String
+				comma;         // optional comma
 
 		// short sentences typically get short responses.
 		if (message.indexOf(" ") === -1)
 			msgLength = 1;
 		else
 			msgLength = message.split(" ").length;
+
+		// longer sentences should get a comma
+		if (msgLength > 8)
+			comma = Math.ceil(msgLength / 2);
+
 		// maximum response length is 2 more words than the incoming message
 		numWords = Math.ceil(Math.random() * (msgLength + 2));
+
+		// simulated delayed response
+		delay = Math.ceil(Math.random() * (numWords + 1) * 1000 + 2000);
 
 		// build the response
 		while (numWords > 0) {
@@ -91,7 +101,7 @@
 			// Capitalize first word only
 			if (!response) {
 				response = words[numChars][selectedWord].split("");
-				// neat trick to filter out the empty string ""
+				// neat trick to filter out any empty strings ("")
 				response.filter(Boolean);
 				response[0] = response[0].toUpperCase();
 				response = response.join("");
@@ -99,17 +109,18 @@
 			else
 				response += words[numChars][selectedWord];
 
-			// one less word in our response
+			// comma?
+			if (comma && numWords == comma)
+				response += ',';
+
+			// one less word required for our response
 			numWords--;
 
-			// add a comma?
-
-			// last word? add a period, if not add a space
-			response += (numWords === 0) ? "." : " ";
+			// last word? add punctuation, if not add a space
+			response += (numWords === 0) ? getPunctuation() : " ";
 		}
 
-		// send message
-		sendMessage("bot", response);
+		sendMessage("bot", response, delay);
 	}
 
 
@@ -117,23 +128,62 @@
 	 * sendMessage  -
 	 * @param  {String} from       - "user", "bot" class
 	 * @param  {String} message    - message
+	 * @param  {Number} delay      - delay in MS
 	 *
 	 */
-	function sendMessage(from, message) {
-		var p, div;
+	function sendMessage(from, message, delay) {
+		var p, img, innerDiv, outerDiv,
+				animationSequence = ["one","two","three"];
 
 		// paragraph
 		p = document.createElement("p");
-		p.appendChild(document.createTextNode(message));
-		p.classList.add(from);
 
-		// div
-		div = document.createElement("div");
-		div.appendChild(p);
-		div.classList.add("full");
+		// img
+		img = document.createElement("img");
+		if (from === "bot")
+			img.src = "img/helmet1.svg";
+		else if (from === "user")
+			img.src = "img/user168.svg";
+		img.classList.add("avatar", "middle");
+
+		// inner div
+		innerDiv = document.createElement("div");
+		innerDiv.appendChild(img);
+		innerDiv.classList.add(from);
+
+		if (delay) {
+
+			// create our three bouncer divs and assign animations
+			animationSequence.forEach(function (animationClass) {
+				var newDiv = document.createElement("div");
+				newDiv.classList.add("bouncer", animationClass);
+				innerDiv.appendChild(newDiv);
+			});
+
+			// once the delay is done, remove child divs, add message
+			setTimeout(function () {
+				var i = innerDiv.childNodes.length - 1;
+				for ( ; i >= 0; i--)
+					if (innerDiv.childNodes[i].tagName === "DIV")
+						innerDiv.removeChild(innerDiv.childNodes[i]);
+				p.appendChild(document.createTextNode(message));
+				innerDiv.appendChild(p);
+				chatHistory.scrollTop = chatHistory.scrollHeight;
+			}, delay);
+		}
+		else {
+			// no delay, just post it
+			p.appendChild(document.createTextNode(message));
+			innerDiv.appendChild(p);
+		}
+
+		//outer div
+		outerDiv = document.createElement("div");
+		outerDiv.appendChild(innerDiv);
+		outerDiv.classList.add("full");
 
 		// chatHistory
-		chatHistory.appendChild(div);
+		chatHistory.appendChild(outerDiv);
 		chatHistory.scrollTop = chatHistory.scrollHeight;
 	}
 
@@ -181,6 +231,21 @@
 				return 16;
 	}
 
+	/**
+	 * getPunctuation returns a random punctuation mark based on frequency
+	 *
+	 */
+
+	function getPunctuation() {
+		var mark = Math.ceil(Math.random() * 10);
+
+		if (mark == 9)
+			return '?';
+		else if (mark == 10)
+			return '!';
+		else
+			return '.';
+	}
 
 	/**
 	 * getXHR - XMLHttpRequest function
