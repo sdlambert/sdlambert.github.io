@@ -1,0 +1,6 @@
+[submodule "demo/fibonacci"]
+	path = demo/fibonacci
+	url = https://github.com/sdlambert/fibonacci.git
+[submodule "demo/loremipsum"]
+	path = demo/loremipsum
+	url = https://github.com/sdlambert/loremipsum.git
