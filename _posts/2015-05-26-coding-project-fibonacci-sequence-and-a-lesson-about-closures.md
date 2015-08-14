@@ -114,7 +114,7 @@ Additional reading:
 [5]: http://stackoverflow.com/questions/30430420/unable-to-add-class-on-a-delay-with-settimeout
 [6]: http://stackoverflow.com/users/816620/jfriend00
 [7]: http://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
-[8]: {{ site.url }}/demo/fibonacci/fibonacci.html
+[8]: {{ site.url }}/fibonacci/fibonacci.html
 [9]: http://markdalgleish.com/presentations/gettingclosure/
 [10]: http://www.sitepoint.com/demystifying-javascript-closures-callbacks-iifes/
 [11]: http://colintoh.com/blog/5-array-methods-that-you-should-use-today
