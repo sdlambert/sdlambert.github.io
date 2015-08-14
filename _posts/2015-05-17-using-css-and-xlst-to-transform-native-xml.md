@@ -109,9 +109,9 @@ Additional Reading:
 
 
 [1]: http://en.wikipedia.org/wiki/XSLT
-[2]: {{ site.url }}/demo/xslt/inventorystyle.xsl
-[3]: {{ site.url }}/demo/xslt/inventorytags.xml
-[4]: {{ site.url }}/demo/xslt/customerownertags.xml
+[2]: {{ site.url }}/xslt-demo/inventorystyle.xsl
+[3]: {{ site.url }}/xslt-demo/inventorytags.xml
+[4]: {{ site.url }}/xslt-demo/customerownertags.xml
 [5]: https://developer.mozilla.org/en-US/docs/Web/XSLT
 [6]: http://www.ibm.com/developerworks/xml/tutorials/x-introxslt/x-introxslt.html
 [7]: https://pixabay.com/en/users/magee-830963/
