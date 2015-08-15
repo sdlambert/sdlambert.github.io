@@ -18,7 +18,8 @@ gems:
   - jekyll-sitemap
 sass:
     sass_dir: _sass
-    style: :compressed
+    style: :expanded
+    # :compressed for production, :expanded for debugging
 
 
 

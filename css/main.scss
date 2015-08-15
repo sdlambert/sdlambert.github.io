@@ -110,6 +110,7 @@ nav {
 .clearfix {
 	display: block;
 	clear: both;
+	margin: 0;
 }
 
 // Main blog sections
@@ -163,14 +164,9 @@ aside {
 	}
 }
 
-.blurb {
-	margin-top: 1em;
-}
-
 .aside_icons {
 	display: inline-block;
-	width: 100%;
-	margin: 0 auto;
+	margin: 0;
 }
 
 // Main article & content
@@ -246,6 +242,7 @@ article {
 
 .tag {
 	display: inline-block;
+	padding-bottom: 1em;
 
 	a {
 		background-color: $deep_teal;
@@ -371,7 +368,7 @@ footer {
 	}
 }
 
-.footer-nav, .copyright {
+.footer-nav, .copyright, .icons {
 	display: inline-block;
 	width: 50%;
 }
@@ -384,11 +381,11 @@ footer {
 }
 
 .social {
-	display: inline-block;
-	margin: 0 auto;
-	width: 25%;
-	max-width: 80px;
-	float: left;
+    display: inline-block;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    float: left;
 }
 
 .social svg:hover{
@@ -403,7 +400,12 @@ footer {
 		float: none;
 		padding: 0 2em;
 		text-align: left;
+
+		ul {
+			text-align: center;
+		}
 	}
+
 	nav {
 		height: 2em;
 
@@ -428,17 +430,15 @@ footer {
 	.logo, .blurb {
 		display: block;
 		float: left;
-		margin: 0;
+		margin-top: 0;
 	}
 
 	.logo {
 		width: 30%;
-		margin: 0;
 	}
 
 	.blurb {
 		width: 70%;
-		margin: 0;
 		padding-left: 1em;
 	}
 
@@ -452,7 +452,6 @@ footer {
 	.main {
 		width: 100%;
 		border: none;
-		margin-top: 1em;
 	}
 	.main > section:first-child, .main > article:first-child {
 		border-top: 1px solid $grey;
@@ -501,10 +500,6 @@ footer {
 	aside {
 		text-align: center;
 		margin: 0;
-
-		div {
-			margin: .25em 0
-		}
 	}
 
 	.logo, .blurb {
@@ -517,6 +512,7 @@ footer {
 
 	.blurb {
 		width: 66.6666%;
+		margin-bottom: .5em;
 	}
 
 	.icons, .footer-nav, .copyright {
