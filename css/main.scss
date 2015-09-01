@@ -110,6 +110,7 @@ nav {
 .clearfix {
 	display: block;
 	clear: both;
+	margin: 0;
 }
 
 // Main blog sections
@@ -142,6 +143,7 @@ aside {
 	section, div {
 		width: 100%;
 		margin: 0;
+		margin-bottom: 1em;
 	}
 
 	img {
@@ -162,12 +164,9 @@ aside {
 	}
 }
 
-.blurb {
-	margin-top: 1em;
-
-	p {
-		margin-bottom: 1em;
-	}
+.aside_icons {
+	display: inline-block;
+	margin: 0;
 }
 
 // Main article & content
@@ -243,6 +242,7 @@ article {
 
 .tag {
 	display: inline-block;
+	padding-bottom: 1em;
 
 	a {
 		background-color: $deep_teal;
@@ -342,6 +342,10 @@ footer {
 	padding: 0;
 	margin: 2em;
 	border-top: 1px solid $grey;
+
+	div {
+		padding-bottom: 1em;
+	}
 }
 
 .footer-list {
@@ -350,34 +354,25 @@ footer {
 	a {
 		text-decoration: none;
 
-		&:link {
+		&:link, &:visited, &:active {
 			color: $grey;
 		}
-
-		&:visited {
-			color: $grey;
-		}
-
 		&:hover {
 			color: $light_teal;
 			text-decoration: underline;
 		}
-
-		&:active {
-			color: $grey;
-		}
 	}
 	li {
 		display: inline-block;
-		padding: 1em 1em;
+		padding: 0 1em;
 	}
 }
 
-.icons, .footer-nav, .copyright {
+.footer-nav, .copyright, .icons {
 	display: inline-block;
 	width: 50%;
-	margin: 0 auto;
 }
+
 
 .shouts {
 	display: block;
@@ -386,11 +381,11 @@ footer {
 }
 
 .social {
-	display: inline-block;
-	margin: auto;
-	width: 25%;
-	padding: 10px;
-	float: left;
+    display: inline-block;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    float: left;
 }
 
 .social svg:hover{
@@ -405,7 +400,12 @@ footer {
 		float: none;
 		padding: 0 2em;
 		text-align: left;
+
+		ul {
+			text-align: center;
+		}
 	}
+
 	nav {
 		height: 2em;
 
@@ -430,17 +430,15 @@ footer {
 	.logo, .blurb {
 		display: block;
 		float: left;
-		margin: 0;
+		margin-top: 0;
 	}
 
 	.logo {
 		width: 30%;
-		margin: 0;
 	}
 
 	.blurb {
 		width: 70%;
-		margin: 0;
 		padding-left: 1em;
 	}
 
@@ -454,7 +452,6 @@ footer {
 	.main {
 		width: 100%;
 		border: none;
-		margin-top: 1em;
 	}
 	.main > section:first-child, .main > article:first-child {
 		border-top: 1px solid $grey;
@@ -503,10 +500,6 @@ footer {
 	aside {
 		text-align: center;
 		margin: 0;
-
-		div {
-			margin: .25em 0
-		}
 	}
 
 	.logo, .blurb {
@@ -519,6 +512,7 @@ footer {
 
 	.blurb {
 		width: 66.6666%;
+		margin-bottom: .5em;
 	}
 
 	.icons, .footer-nav, .copyright {
