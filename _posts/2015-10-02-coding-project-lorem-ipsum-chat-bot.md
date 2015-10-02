@@ -8,7 +8,7 @@ description: "I created a simple chat application designed to speak lorem ipsum.
 image_path: "/img/sass-logo.png"
 ---
 
-![Sass Logo](/img/sass-logo.png "Sass logo")
+![Lorem Ipsum Chat Application](/img/loremipsum.png "Lorem Ipsum Chat Application")
 
 One of the most frustrating things an aspiring developer can do is try to come up with practical ideas for their next project. I found myself running into this very problem. I've got lots of ideas, and I wanted to challenge myself. I also knew I wanted to make something that was more interactive, an application that resembled something that people would actually use.
 
