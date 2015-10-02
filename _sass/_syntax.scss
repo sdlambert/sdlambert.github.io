@@ -8,6 +8,8 @@ pre, code {
 	font-family: Consolas, "Droid Sans Mono", Menlo-Regular, monospace;
   font-size: 15px;
   line-height: 1.4em;
+  white-space: pre;
+  word-spacing: normal;
 }
 
 section > pre {
@@ -22,23 +24,26 @@ pre, .highlight {
   height: 100%;
 }
 
-.highlight {
-    overflow: auto;
-}
-
 section > pre, blockquote, .highlight {
 	margin: .5em 0;
 }
 
-.highlight code {
-  background-color: #272822;
-  border: none;
+p code {
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  padding: 0 2px;
 }
 
 .highlight {
   background: #272822;
   border-radius: 5px;
   color: #f8f8f2;
+  overflow: auto;
+}
+
+.highlight code {
+  background-color: #272822;
+  border: none;
 }
 
 .highlight .hll {
