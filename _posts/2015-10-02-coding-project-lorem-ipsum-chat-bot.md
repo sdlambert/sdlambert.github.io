@@ -5,7 +5,7 @@ tags:
  - javascript
 description: "I created a simple chat application designed to speak lorem ipsum. Follow along as I cover the creation of a lorem ipsum conversion tool, breakdown the code and higher order functions used, and discuss some of the challenges I faced."
 #metadata
-image_path: "/img/sass-logo.png"
+image_path: "/img/loremipsum.png"
 ---
 
 ![Lorem Ipsum Chat Application](/img/loremipsum.png "Lorem Ipsum Chat Application")
