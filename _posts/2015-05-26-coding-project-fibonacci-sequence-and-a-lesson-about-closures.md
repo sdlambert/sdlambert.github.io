@@ -14,7 +14,7 @@ In this quick coding exercise I implement the Fibonacci sequence using Javascrip
 
 The [Fibonacci Sequence][1] is a sequence of numbers beginning with a set of two integers: 0 and 1 or 1 and 1. The next number in the sequence is the sum of the previous two. For instance:
 
-`1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...etc.`
+    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...etc.
 
 Implementing the function itself was simple enough, but I learned an even more valuable lesson about Javascript closures along the way.
 
