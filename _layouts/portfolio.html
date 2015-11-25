@@ -3,7 +3,24 @@
 {% include  aside.html %}
 	<div class="main">
 		<article>
-			{{  content  }}
+			<h1>Portfolio Projects</h1>
+			<p>Here's where you'll find a collection of some the projects I've worked on so far.</p>
+			<!-- Begin for loop -->
+			{% for item in site.data.portfolio %}
+			<div class="portfolio-item">
+				<a href="{{ item.demo }}"><img src="{{ item.image }}"></a>
+				<div class="portfolio-text">
+					<h2>{{ item.title }}</h2>
+					<p>{{ item.description }}</p>
+					<ul>
+						<li class="tag"><a href="{{ item.demo }}">Demo</a></li>
+						<li class="tag"><a href="{{ item.github }}">Github</a></li>
+						<li class="tag"><a href="{{ item.blog }}">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+			<!-- end for -->
 		</article>
 	</div>
 	<div class="clearfix"></div>

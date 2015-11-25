@@ -1,0 +1,15 @@
+#insert new items at the top!
+
+- image: "/img/portfolio-loremipsum.png"
+  title: "Lorem Ipsum Chatbot"
+  description: "A lorem ipsum chatbot application written in plain Javascript."
+  demo: "/loremipsum/chat.html"
+  github: "https://github.com/sdlambert/loremipsum"
+  blog: "http://sdlambert.github.io/2015/10/02/coding-project-lorem-ipsum-chat-bot/"
+
+- image: "/img/portfolio-fibonacci.png"
+  title: "Fibonacci Sequence"
+  description: "A fionacci sequence generator with a simple CSS transition."
+  demo: "/fibonacci/fibonacci.html"
+  github: "https://github.com/sdlambert/fibonacci"
+  blog: "http://sdlambert.github.io/2015/05/26/coding-project-fibonacci-sequence-and-a-lesson-about-closures/"

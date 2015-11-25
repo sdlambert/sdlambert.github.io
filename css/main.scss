@@ -203,7 +203,24 @@ article {
 
 // Portfolio specific
 
+.portfolio-item {
+	margin: 1em auto;
+	border: 1px solid $grey;
+	border-radius: 5px;
+	overflow: hidden;
 
+	img {
+		border-bottom: 1px solid $grey;
+	}
+
+	ul {
+		margin: .5em 0;
+	}
+}
+
+.portfolio-text {
+	padding: .5em;
+}
 
 // Post content specific
 
@@ -243,13 +260,13 @@ article {
 .tag {
 	display: inline-block;
 	padding-bottom: 1em;
+	background-color: $deep_teal;
+	color: $white;
+	border-radius: 5px;
+	padding: 0.1em 1em;
+	margin: .1em;
 
 	a {
-		background-color: $deep_teal;
-		color: $white;
-		border-radius: 5px;
-		padding: 0.1em 1em;
-		margin: .1em;
 
 		&:link {
 			color: $light_teal;
