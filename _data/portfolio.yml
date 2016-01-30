@@ -1,5 +1,13 @@
 #insert new items at the top!
 
+- image: "/img/portfolio-colors.png"
+  title: "CSS Color Generator"
+  description: "A simple CSS color generator written in plain Javascript."
+  demo: "/colors/"
+  github: "https://github.com/sdlambert/colors"
+  blog: "http://sdlambert.github.io/2015/05/26/coding-project-fibonacci-sequence-and-a-lesson-about-closures/"
+# UPDATE THE BLOG URL!!!
+
 - image: "/img/portfolio-loremipsum.png"
   title: "Lorem Ipsum Chatbot"
   description: "A lorem ipsum chatbot application written in plain Javascript."
