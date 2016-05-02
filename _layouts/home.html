@@ -9,7 +9,8 @@
 				<h2><a href="{{ post.url }}" class="h2-triangle">{{ post.title }}</a></h2>
 				<p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
 				{{ post.excerpt }}
-				<p><a href="{{ post.url }}" class="read-more">Read more...</a></p>
+				<a href="{{ post.url }}" class="read-more">Read more...</a>
+				<div class="clearfix"></div>
 			</article>
 			{% endfor %}
 		</section>
