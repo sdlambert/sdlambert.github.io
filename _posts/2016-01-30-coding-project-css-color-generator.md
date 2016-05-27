@@ -16,7 +16,7 @@ In this project I built a color palette and hex code generator, which utilizes t
 
 Here's a direct link to the [color generator app][3]. (You can also review the code [here][4], if you like.)
 
-##The RandomColor.js library
+## The RandomColor.js library
 
 For my next project, I knew I wanted to work with a new Javascript library. Of course, there are thousands of libraries to choose from, but I wanted something simple and functional. When I discovered RandomColor.js by David Merfield, I knew I had the right tool to build my application.
 
@@ -36,7 +36,7 @@ For the purposes of this project I did not utilize the `seed` or `format` proper
 
 If the user so chooses, they may specify a *hue* (`"red"`, `"orange"`, `"yellow"`, `"green"`, `"blue"`, `"purple"`, `"pink"`, or `"monochrome"`) and *luminosity* (`"bright"`, `"light"`, or `"dark"`) and the number (`count`) of colors they'd like. If they specify more than one, it will return an array of strings.
 
-##Taking advantage of the DOM
+## Taking advantage of the DOM
 
 The app itself very straightforward. One section of the app consists of a form containing all of our inputs, and the rest of the webpage is the space where our color palettes will be displayed. Modifying any one of the inputs will generate a new set of colors.
 
@@ -46,7 +46,7 @@ We then take our array of Nodes and append them to a [`DocumentFragment`][6] obj
 
 Once we have created our fragment, we pass it to the `fillSwatches()` function, which will append all of our color swatches without repainting the page, one for each item in the array. Finally, each time the inputs are manipulated, we make a call to our `generateSwatches` function, which runs all the code described above.
 
-##Conclusion
+## Conclusion
 
 I'd like to thank David Merfield for creating the library and sharing it with the public, and for giving me feedback on the project itself. I had a lot of fun playing with randomColor.js, and I think I was able to make an intuitive UI for the library. I was also excited to apply some of the knowledge I'd gained regarding the DOM API. All in all, I was very happy with the results. Thanks for reading!
 

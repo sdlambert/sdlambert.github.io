@@ -20,7 +20,7 @@ Implementing the function itself was simple enough, but I learned an even more v
 
 <!--more-->
 
-##The Problem
+## The Problem
 
 The algorithm itself wasn't exactly tricky. In fact, the Fibonacci sequence itself was only a few lines of code:
 
@@ -91,7 +91,7 @@ You can see the final demo here:
 
 [Fibonacci Sequence Demo][8]
 
-##Conclusion
+## Conclusion
 
 While I had known about the functionality of IIFE's and the Array object before, I hadn't thought to use either on my first pass-through. Through just a few refactoring iterations, I was able to implement a common functional Javascript pattern and solve a problem along the way!
 

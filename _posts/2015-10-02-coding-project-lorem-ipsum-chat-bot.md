@@ -16,7 +16,7 @@ What I ended up with was a simple SMS-like application, complete with a bot that
 
 <!--more-->
 
-##Bottling Latin
+## Bottling Latin
 
 I started my project by figuring out how to create an object that contained all of the *lorem ipsum* from which my bot could pick and choose. I headed over to the handy [Lorem Ipsum Generator][1] and generated about 25 paragraphs worth of text. From this I'd need to create a simple application to transform this text into a usable Javascript object. I knew my bot would need to pick words at random, but I wanted to do so in a way that resembled regular speech patterns. So, I went about to filter the text into unique words and then sort by word length.
 

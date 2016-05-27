@@ -15,13 +15,13 @@ SASS, short for Syntactically Awesome Stylesheets, is a CSS extension language t
 
 <!--more-->
 
-##So What Does Sass Do, Exactly?
+## So What Does Sass Do, Exactly?
 
 Sass works by building off the familiar concepts of CSS and adding additional syntax to make writing your stylesheets more intuitive and expressive. In doing so, it implements common programming patterns like nested statements and variables to improve clarity and reduce redundancy. For large projects this can be a real time saver, but even for smaller projects it can transform the way you think about styling your web pages.
 
 Sass comes in two flavors: ***SCSS***, which follows many of the same rules and largely resembles CSS, and ***Sass*** (also known as "indented syntax"), which still resembles traditional CSS, but removes things like curly braces and semicolons. We'll be focusing solely on the SCSS format in this article.
 
-##How to Get Up and Running
+## How to Get Up and Running
 
 All of the Sass files you compose will be run through a pre-processor, which will read in your source file and output your styles in traditional CSS. On Linux, Sass is compiled using Ruby. From there, it's as simple as installing the relevant gem:
 
@@ -31,11 +31,11 @@ If you need help installing Sass on other operating systems, please consult the 
 
 Since I'm using Jekyll for this blog, [Sass support][2] is built right in. I simply have to add my `.scss` files to the css directory and I'm good to go.
 
-##Sass Basics
+## Sass Basics
 
 The best way to understand Sass is to view it as an extension of CSS. That is, essentially what it is. There are dozens of new additions, some of which are beyond the scope of this article, so let's go over some of the most common ones.
 
-###Comments
+### Comments
 
 [Comments][6] in Sass support inline formats using double slashes in addition to multi-line comments using star-slash. The difference is that inline comments are not transferred to the resulting CSS file, while traditional multi-line comments will.
 
@@ -48,7 +48,7 @@ The best way to understand Sass is to view it as an extension of CSS. That is, e
 
 Using inline comments may be a welcome change for you, and it also helps to reduce the resulting file size. (Sass has several [output options][13]. I use the `:compressed` option, which will minify your CSS and remove all comments regardless of which style you use.)
 
-###Variables
+### Variables
 
 One of the most basic functions of Sass is using [variables][3]. Just like other programming languages, variables can be used to store information that we can use later within our stylesheets. A common usage is to define the  colors we use through the page. Here's the color variables used for this blog:
 
@@ -99,7 +99,7 @@ $global-color: #14432a;
 
 On this blog I use variables for colors, but the possibilities extend much further. Make sure the use of your variables is justified. There's not much of a case for a variable named `$nav-list-item-bottom-padding`, but for a consistent look and feel you might want to use `$button-border-radius`. Take a look at your code and experiment.
 
-###Nesting
+### Nesting
 
 [Nesting][4] is a fundamental addition to Sass. Have you ever had CSS code that resembled something like the following?
 
@@ -182,7 +182,7 @@ a {
 
 In this example, all of the nested selectors above will reference the parent element, in this case the anchor. The resulting CSS will concatenate the two into vanilla CSS (i.e. `a:hover`, etc.)
 
-###Operations
+### Operations
 
 Sass introduces [mathematic operations][7] into CSS in a powerful way. Combined with variables, you can really make your stylesheets dynamic. Sass supports all the standard operators you might find in any programming language such as `+`, `-`, `*`, `/`, and `%`. There are also relational operators such as `>`, `>=`, `<=`, `<`, `==`, `!=`.
 
@@ -204,7 +204,7 @@ Because both elements depend on the `$width` variable, instead of updating our C
 
 There are some unique considerations with the division operation, which shares the same operator `/` with some CSS functions where the slash acts as a separator. With that comes a few caveats and workarounds for using division, so I'd recommend you review the [Sass documentation on the division symbol][8] before using it in the wild.
 
-###Imports
+### Imports
 
 You might find yourself using the same CSS in all your projects, such as a reset.css file or perhaps a font family you are fond of. Sass extends [import][9] statements to allow you to modularize your CSS and bring in snippets (or partials) from other files as needed. Unlike standard CSS @import statements, all of your Sass imports are pre-processed, meaning all of your CSS is compiled into a single file. This results in a single file for your CSS rather than asking the browser to request additional files when your page is first loaded.
 
@@ -221,7 +221,7 @@ Each of our import statements will look for Sass or SCSS files of the same name.
 
 By importing these files separately I can re-use them (`_reset.css`, `_borderbox.css`) or modify them (`_fonts`) without the need to dive into my main CSS file.
 
-##Conclusion
+## Conclusion
 
 Converting to Sass was a lot of fun and I really like how expressive and intuitive it is to write. It truly feels like an extension of something I'm familiar with, and it offers a lot of powerful features that only a pre-processor can provide. In addition, the syntax covered here only scratches the surface of what can be done (such as @mixin/@include, @extends, control statements and functions, to name a few) but it should give you a good grasp on some of the most important fundamentals.
 

@@ -14,7 +14,7 @@ The `<datalist>` element is an HTML5 element that provides a list of suggested v
 
 <!--more-->
 
-##The Element
+## The Element
 
 The `datalist` is an HTML5 element designed to augment standard text input with suggested values. You are likely already familiar with the behavior of the `datalist` element: most web browsers and search engines allow you to enter some text and a list of suggested terms appears below before you're finished typing your phrase. The `datalist` element contains all of the suggested values that appear below (or within) our input.
 
@@ -39,7 +39,7 @@ You might notice that the `datalist` element borrows a familiar pattern from its
 
 The specification for the `input` element and its accompanying `list` attribute is designed to work with [a variety of HTML5 inputs][1], and not just text. You can define suggested values for [color, range, number, and even date and time inputs.][2] The exceptions to the rule are the hidden, checkbox, radio and button inputs. Unfortunately, the browser support for input types other than text is limited. (See the [Browser Support Section][3] below.)
 
-##A Practical Use-Case
+## A Practical Use-Case
 
 Imagine a scenario where we want the user to select from a set of values but also want to provide them with a way to enter their own custom information, in a catch-all category labeled "other". It might look something like this:
 
@@ -70,7 +70,7 @@ As with most HTML5 elements, there are a few polyfills you can check out to prov
 
 One final note, and that is the options for styling a `datalist` are limited to the input element itself (i.e. the size of the input area, border, text and background color, etc.) The selectable list of options that drops down is not styleable and dictated solely by your browser's default styling.
 
-##Conclusion
+## Conclusion
 
 I was surprised I hadn't learned more about the `datalist` element earlier. he element itself really lends itself well to enhancing the user experience and providing a unique way to provide suggested values while allowing the user to retain control over the input. And while browser support is a bit disappointing, polyfills can provide support for the element until it is more robust. Hopefully you were able to learn more about the `datalist` element, and perhaps use it on your next project. Thanks for reading!
 

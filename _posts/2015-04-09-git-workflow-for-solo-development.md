@@ -15,7 +15,7 @@ When I first started researching what tools are used out in industry, I found lo
 After reading some more, learning how `git` works, and diving into the tool itself, I was able to come full circle. In this article, discuss some of the benefits that come with using `git`. I'll also show you how I use `git` in my own solo projects, and how to set up a practical and scalable project workflow. You might just find that `git` can work for you on any sized project, even the ones you develop on your own.
 <!--more-->
 
-##Benefits
+## Benefits
 
 Using `git` with your projects gives you several immediate benefits:
 
@@ -26,7 +26,7 @@ Using `git` with your projects gives you several immediate benefits:
 
 If you're not already familiar, `git` is a distributed version control system (DVCS). In a nutshell, it allows you to track changes to files within your project directory. These changes can be saved as states or snapshots called commits. These commits are then stored in a local repository and when viewed as a whole represent a history of your project.
 
-##Getting up to Speed
+## Getting up to Speed
 
 While a thorough tutorial to `git` for beginners is outside the scope of this article, I'd be remiss if I did not provide some of the resources that helped me. First off is [Roger Dudler's Git Guide][1] which provides a very high-level introduction. For an interactive walk-through, head over to [Try Git][2]. Finally, for a quick reference guide I find myself using the [Become a `git` Guru guide on Atlassian][3] more and more.
 
@@ -42,7 +42,7 @@ I'd also strongly recommend using an online `git` repository such as [GitHub][4]
 
 Preferences aside, the key difference between the two sites is that Bitbucket provides users private repositories for free, while on GitHub this is a paid feature. The rest of this guide assumes you have successfully initialized your repository and connected it to a remote host outside your machine.
 
-##The Workflow
+## The Workflow
 
 My solo development workflow is divided into three main segments:
 
@@ -94,7 +94,7 @@ As you can see in the diagram above, we make several commits to dev before worki
 
 One caveat to working with features is keeping your focus on the scope. Speaking personally, it can be easy to get distracted and want to work on something outside the scope of your feature (i.e. "that margin is about 5 pixels off...") This can lead to messy merges where you'll need to go through your code line by line and approve every conflict. You should aim to work on your features independently and in isolation from rest of your code, but depending on the nature of the feature you are working on this may not be possible.
 
-##Bringing it all Together
+## Bringing it all Together
 
 Here's what the process looks like with all of the segments combined:
 
@@ -102,7 +102,7 @@ Here's what the process looks like with all of the segments combined:
 
 As you can see, most of the activity is centered on our development branch with periodic merges to the master branch. We subsequently push these our remote. If we need a new feature for our project, we create a new branch off dev and merge it back in when we're finished.
 
-##Conclusion
+## Conclusion
 
 Before we conclude, I should give credit where credit is due. There were a couple of other people who have written about solo workflow, but it was actually this [post by Vincent Driessen][6] that served as the inspiration for my own. If you finish this article and are looking for more, definitely give it a read.
 

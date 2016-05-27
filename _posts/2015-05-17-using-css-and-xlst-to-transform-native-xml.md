@@ -17,7 +17,7 @@ Towards the end of our SQL class we covered the process of converting our query 
 
 *Please note the XML displayed in this demo is best viewed in Firefox.*
 
-##A Quick Overview
+## A Quick Overview
 
 For our XSLT project, we'll need three files. The first file is our native XML file, which we'll need to tweak slightly before moving on. The raw XML is just going to have the raw data from our query in XML format, like so:
 
@@ -84,7 +84,7 @@ We continue by defining our HTML root and HTML document structure and embedded C
 
 Our first statement is a `for-each` loop, which basically says for each node in the XML document tree (starting with the child nodes of the `<list>` and `<inventory>` elements) do the following. The next XML element is a `value-of` statement, which selects the data contained within the specified tags. In this case, we are grabbing the `name`, `description` and `maxprice` elements and displaying the data within each. We do this for each element in our loop until we have parsed all of our XML.
 
-##The Results
+## The Results
 
 Once we have our basic XSLT in place, we can put all three together and see the results:
 
