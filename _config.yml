@@ -12,7 +12,7 @@ tagline:                The dev blog of Scott Lambert
 url:                    "http://sdlambert.github.io"
 localurl:               "http://dev.sdlambert.github.io"
 destination:            "~/public_html/sdlambert.github.io"
-copyright:              2015
+copyright:              2016
 excerpt_separator:      <!--more-->
 gems:
   - jekyll-sitemap
