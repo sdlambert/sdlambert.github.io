@@ -8,7 +8,7 @@ description: "A brief overview of the HTML5 &lt;datalist&gt; element. I'll discu
 image_path: "/img/datalist.png"
 ---
 
-![In Brief: Datalist](/img/datalist.png "In Brief: Datalist logo")
+![Datalist element logo](/img/datalist.png "Datalist element logo")
 
 The `<datalist>` element is an HTML5 element that provides a list of suggested values for an input element. In this brief article, we'll explore the usage of the element and look at some use cases, and discuss the browser support (or lack thereof) and how we can use the feature today using polyfills.
 
