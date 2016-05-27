@@ -3,7 +3,7 @@ title: "A Brief Overview of the Datalist Element"
 layout: post
 tags:
  - html
-description: "A brief overview of the HTML5 &lt;datalist&gt; element. I'll discuss how it can be used with various input types and discuss some examples of its use."
+description: "A brief overview of the HTML5 &lt;datalist&gt; element. I'll discuss how it can be used with various input types, review some of its limitations, and present some use-case examples."
 #metadata
 image_path: "/img/datalist.png"
 ---
