@@ -5,7 +5,7 @@ image_path: "/img/scott-dev-logo.png"
 ---
 # About me
 
-<span class="left">![Scott Lambert, future web dev](/img/profile-150.png "Scott Lambert, future web dev")</span>Hi there! scott/dev is my personal web development blog, and the place you'll find all of my [portfolio items](/portfolio/) and [posts](/blog/) about all things web dev.
+<span class="left">![Scott Lambert, future web dev](/img/profile-150.png "Scott Lambert, future web dev")</span>Hi there! scott/dev is my personal web development blog, and the place you'll find all of my [portfolio items](/portfolio/) and [posts](/archive/) about all things web dev.
 
 <div class="clearfix"></div>
 
