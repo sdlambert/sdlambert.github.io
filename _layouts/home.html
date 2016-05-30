@@ -4,7 +4,7 @@
 	<div class="main">
 		<section>
 			<h1>Recent blog posts:</h1>
-			{% for post in site.posts limit: 3 %}
+			{% for post in paginator.posts limit: 3 %}
 			<article>
 				<h2><a href="{{ post.url }}" class="h2-triangle">{{ post.title }}</a></h2>
 				<p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
@@ -13,6 +13,15 @@
 				<div class="clearfix"></div>
 			</article>
 			{% endfor %}
+		</section>
+		<section class="pagination">
+		  {% if paginator.previous_page %}
+		    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> |
+		  {% endif %}
+		  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+		  {% if paginator.next_page %}
+		    | <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+		  {% endif %}
 		</section>
 	</div>
 	<div class="clearfix"></div>

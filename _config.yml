@@ -16,12 +16,15 @@ copyright:              2016
 excerpt_separator:      <!--more-->
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 sass:
     sass_dir: _sass
     style: :expanded
     # :compressed for production, :expanded for debugging
 
-
+# Pagination
+paginate: 3
+paginate_path: "page:num"
 
 # Author
 author:
