@@ -404,17 +404,33 @@ footer {
 	margin: 0 auto;
 }
 
+// Hover effect by Ian Lunn
+// https://github.com/IanLunn/Hover
+// via MIT license
+// (https://opensource.org/licenses/mit-license.php)
+
 .social {
     display: inline-block;
     margin: auto;
     width: 25%;
     padding: 10px;
     float: left;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
 
-.social svg:hover{
-	position: relative;
-	bottom: 4px;
+
+.social:hover{
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
 }
 
 @media screen and (max-width:768px){
